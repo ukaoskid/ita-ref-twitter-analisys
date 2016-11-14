@@ -55,6 +55,7 @@ Dataset reading indexes for `italian-geopolitic-subdivision.csv`
 | Longitude | Number | | Metropolitan City center Longitude |
 
 `GeoDistrict` Legenda of possible/available values
+
 | Value | Description |
 |-------|-------------|
 | NW | North-West |
