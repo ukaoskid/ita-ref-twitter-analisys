@@ -26,17 +26,17 @@ library(sqldf)
 library(ggmap)
 source("twitter_map.R")
 
-api_key <- "T7AvLRoNhQmur8hwDp87PDlIW"
-api_secret <- "gogtlL294hRd1NpsPAfFWXnLntI2MDgA5iAPR2IFSEtam4it9w"
-token <- "4284853821-CDiJKgDtSmIkomdSec23fEwiWJtZaF818F7bhEi"
-token_secret <- "TdYlBlHUDmWXWYwYiRk1G6bLitaWesXP15H1NM0ScCx2P"
+api_key <- "api_key"
+api_secret <- "api_secret"
+token <- "token"
+token_secret <- "token_secret"
 
 ext_dates <- c("2016-11-13")
 unt_dates <- c("2016-11-14")
 
 tags_NO <- "#IoVotoNO OR #BastaUnNO OR #IoDicoNO OR #VotaNO"
-tags_YES <- "#IoVotoSI OR #BastaUnSI OR #IoDicoSI OR #VotaSI OR #IoVotoSì OR #BastaUnSì OR #IoDicoSì OR #VotaSì"
-grep_filter_NO <- "/#bastaunsi|#iovotosi|#iodicosi|#votasi|#bastaunsì|#iovotosì|#iodicosì|#votasì/ig"
+tags_YES <- "#IoVotoSI OR #BastaUnSI OR #IoDicoSI OR #VotaSI OR #IoVotoSÃ¬ OR #BastaUnSÃ¬ OR #IoDicoSÃ¬ OR #VotaSÃ¬"
+grep_filter_NO <- "/#bastaunsi|#iovotosi|#iodicosi|#votasi|#bastaunsÃ¬|#iovotosÃ¬|#iodicosÃ¬|#votasÃ¬/ig"
 grep_filter_YES <- "/#bastaunno|#iovotono|#iodicono|#votano/ig"
 geo_areas <- read.csv("Italy_MetropolitanAreas.csv", sep = ";")
 
