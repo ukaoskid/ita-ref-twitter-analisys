@@ -1,21 +1,5 @@
 # Twitter data collection for Italian Referendum Vote Day
 # This study has to be intended for a experimental purpose
-#
-# Prerequisites:
-#
-# - Taking tweets by geolocation filtering.
-# - Geolocation granularity level: Local discrict (Province)
-# - Positive and negative meaning hastags cannot coexsists in the same tweet
-# - User are grouped simulating one vote
-#
-# Output data for YES and NO:
-# - Italian heatmap
-# - Daily mean trend
-# - Tweet/Retweet ratio
-#
-# The study will underline also unconfident users with this social network:
-# - % of uncomplete profiles
-# - % of incorrect/deceiptive profiles
 
 library(twitteR)
 library(RCurl)

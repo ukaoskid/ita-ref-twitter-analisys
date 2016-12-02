@@ -10,7 +10,9 @@ tweets_data <- function() {
     # Calculate possibile user propagation
     global_users <<- mutate(global_users, possible_propagation = 0)
     
-    for (i in 13571:nrow(global_users)) {
+	# Here a try-catch is missing, users cannot exists anymore.
+    # If a users does not exists twitteR lib will fail  
+    for (i in 1:nrow(global_users)) {
         
         print(i)
         temp_user = getUser(global_users$screenName[i])
