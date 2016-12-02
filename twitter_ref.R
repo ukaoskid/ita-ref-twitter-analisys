@@ -33,14 +33,14 @@ api_secret <- "gogtlL294hRd1NpsPAfFWXnLntI2MDgA5iAPR2IFSEtam4it9w"
 token <- "4284853821-CDiJKgDtSmIkomdSec23fEwiWJtZaF818F7bhEi"
 token_secret <- "TdYlBlHUDmWXWYwYiRk1G6bLitaWesXP15H1NM0ScCx2P"
 
-ext_dates <- c("2016-11-20")
-unt_dates <- c("2016-11-21")
+ext_dates <- c("2016-11-30")
+unt_dates <- c("2016-12-01")
 
 tags_NO <- "#IoVotoNO OR #BastaUnNO OR #IoDicoNO OR #VotaNO"
 tags_YES <- "#IoVotoSI OR #BastaUnSI OR #IoDicoSI OR #VotaSI OR #IoVotoSì OR #BastaUnSì OR #IoDicoSì OR #VotaSì"
 grep_filter_NO <- "/#bastaunsi|#iovotosi|#iodicosi|#votasi|#bastaunsì|#iovotosì|#iodicosì|#votasì/ig"
 grep_filter_YES <- "/#bastaunno|#iovotono|#iodicono|#votano/ig"
-geo_areas <- read.csv("Italy_MetropolitanAreas.csv", sep = ";")
+geo_areas <- read.csv("italian-geopolitic-subdivision.csv", sep = ";")
 geo_areas <- mutate(geo_areas, GADMCode = as.character(GADMCode))
 
 # Create Twitter Connection
@@ -100,7 +100,8 @@ for (i in 1:length(ext_dates)) {
 tweets_global <- mutate(tweets_global, ext_filter = as.character(extraction_date))
 
 ledate <- c("2016-11-03", "2016-11-04", "2016-11-05", "2016-11-06","2016-11-07", "2016-11-08", "2016-11-09", "2016-11-10", "2016-11-11", "2016-11-12",
-            "2016-11-13", "2016-11-14", "2016-11-15", "2016-11-16", "2016-11-17", "2016-11-18", "2016-11-19", "2016-11-20")
+            "2016-11-13", "2016-11-14", "2016-11-15", "2016-11-16", "2016-11-17", "2016-11-18", "2016-11-19", "2016-11-20", "2016-11-21",
+            "2016-11-22", "2016-11-23", "2016-11-24", "2016-11-25", "2016-11-26", "2016-11-27", "2016-11-28", "2016-11-29", "2016-11-30")
 if (exists("rolling_values")) {
     rm(rolling_values)
     rolling_values <<- data.frame()
@@ -124,5 +125,4 @@ process_datasets()
 plot_charts()
 
 # Map
-source("twitter_map.R")
 plot_poltype_map(1)

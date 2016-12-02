@@ -29,9 +29,9 @@ plot_poltype_map <- function(index = "text") {
             axis.text.x = element_blank(),
             axis.text.y = element_blank(),
             panel.border = element_blank(),
-            panel.grid=element_blank(),
+            panel.grid = element_blank(),
             axis.ticks = element_blank(),
-            plot.title=element_text(size = 14, face = "bold")
+            plot.title = element_text(size = 14, face = "bold")
         )
     
     filen <- paste("c:/Users/SIMONENB/Desktop/gif/map/", as.character(index), ".png", sep = "")
@@ -47,7 +47,7 @@ plot_poltype_map <- function(index = "text") {
                             breaks = c(min(geo_results$tendency[!is.na(geo_results$tendency)]), max(geo_results$tendency[!is.na(geo_results$tendency)])),
                             labels = c("No", "Yes"))
     
-    ggsave(filen, width = 13.2, height = 9.2, units = "cm", dpi = 100)
+    ggsave(filen, width = 16.2, height = 13.2, units = "cm", dpi = 200)
 }
 
 
