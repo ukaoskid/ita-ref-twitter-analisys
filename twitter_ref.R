@@ -28,13 +28,14 @@ library(ggplot2)
 source("twitter_map.R")
 source("twitter_ds.R")
 
-api_key <- "T7AvLRoNhQmur8hwDp87PDlIW"
-api_secret <- "gogtlL294hRd1NpsPAfFWXnLntI2MDgA5iAPR2IFSEtam4it9w"
-token <- "4284853821-CDiJKgDtSmIkomdSec23fEwiWJtZaF818F7bhEi"
-token_secret <- "TdYlBlHUDmWXWYwYiRk1G6bLitaWesXP15H1NM0ScCx2P"
+api_key <- "your_twitter_api_key"
+api_secret <- "your_twitter_api_secret"
+token <- "your_twitter_app_token"
+token_secret <- "your_twitter_app_token_secrep"
 
-ext_dates <- c("2016-11-30")
-unt_dates <- c("2016-12-01")
+# I suggest to make an extraction day by day and not on a big range (as below)
+ext_dates <- c("2016-11-01", "2016-11-02", "2016-11-03")
+unt_dates <- c("2016-11-02", "2016-11-03", "2016-11-04")
 
 tags_NO <- "#IoVotoNO OR #BastaUnNO OR #IoDicoNO OR #VotaNO"
 tags_YES <- "#IoVotoSI OR #BastaUnSI OR #IoDicoSI OR #VotaSI OR #IoVotoSì OR #BastaUnSì OR #IoDicoSì OR #VotaSì"
@@ -99,22 +100,23 @@ for (i in 1:length(ext_dates)) {
 
 tweets_global <- mutate(tweets_global, ext_filter = as.character(extraction_date))
 
-ledate <- c("2016-11-03", "2016-11-04", "2016-11-05", "2016-11-06","2016-11-07", "2016-11-08", "2016-11-09", "2016-11-10", "2016-11-11", "2016-11-12",
+calculation_dates <- c("2016-11-03", "2016-11-04", "2016-11-05", "2016-11-06","2016-11-07", "2016-11-08", "2016-11-09", "2016-11-10", "2016-11-11", "2016-11-12",
             "2016-11-13", "2016-11-14", "2016-11-15", "2016-11-16", "2016-11-17", "2016-11-18", "2016-11-19", "2016-11-20", "2016-11-21",
             "2016-11-22", "2016-11-23", "2016-11-24", "2016-11-25", "2016-11-26", "2016-11-27", "2016-11-28", "2016-11-29", "2016-11-30")
+			
 if (exists("rolling_values")) {
     rm(rolling_values)
     rolling_values <<- data.frame()
 }
 
-for (k in 1:length(ledate)) {
+for (k in 1:length(calculation_dates)) {
     
-    print(ledate[k])
-    process_datasets(ledate[k])
-    rolling_total(ledate[k])
-    plot_rolling_total(ledate[k])
-    plot_poltype_map(ledate[k])
-    plot_charts(ledate[k])
+    print(calculation_dates[k])
+    process_datasets(calculation_dates[k])
+    rolling_total(calculation_dates[k])
+    plot_rolling_total(calculation_dates[k])
+    plot_poltype_map(calculation_dates[k])
+    plot_charts(calculation_dates[k])
 }
 
 
