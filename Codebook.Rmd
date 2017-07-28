@@ -185,7 +185,7 @@ Unfortunately for not-Italian people, the reform's original text is in Italian, 
 #### Charts and Outputs
 ##### Trending Heatmap
 
-![Italian constitutional Referendum 2016 Trending Heatmap](https://dl.dropboxusercontent.com/u/52092659/ref/final/heatmap.png "Italian constitutional Referendum 2016 Trending Heatmap")
+![Italian constitutional Referendum 2016 Trending Heatmap](https://github.com/ukaoskid/ita-ref-twitter-analisys/blob/master/images/heatmap.png "Italian constitutional Referendum 2016 Trending Heatmap")
 
 ##### Big Area
 ###### Histogram
@@ -200,7 +200,7 @@ knitr::kable(big_area_results, format = "markdown")
 ##### Geo District
 ###### Histogram
 
-![Italian constitutional Referendum 2016 Geo District Trending Histogram](https://dl.dropboxusercontent.com/u/52092659/ref/final/geo_hist.png "Italian constitutional Referendum 2016 Geo District Trending Histogram")
+![Italian constitutional Referendum 2016 Geo District Trending Histogram](https://github.com/ukaoskid/ita-ref-twitter-analisys/blob/master/images/geo_hist.png "Italian constitutional Referendum 2016 Geo District Trending Histogram")
 
 ###### Final output
 ```{r, include=TRUE, results='asis', echo=FALSE}
@@ -210,11 +210,11 @@ knitr::kable(geo_distric_results, format = "markdown")
 ##### Overall
 
 ###### Rolling chart
-![Italian constitutional Referendum 2016 Overall Rolling chart](https://dl.dropboxusercontent.com/u/52092659/ref/final/rolling_chart.png "Italian constitutional Referendum 2016 Overall Rolling chart")
+![Italian constitutional Referendum 2016 Overall Rolling chart](https://github.com/ukaoskid/ita-ref-twitter-analisys/blob/master/images/rolling_chart.png "Italian constitutional Referendum 2016 Overall Rolling chart")
 
 ###### Pie chart
 
-![Italian constitutional Referendum 2016 Overall Trending Pie chart](https://dl.dropboxusercontent.com/u/52092659/ref/final/national_pie.png "Italian constitutional Referendum 2016 Overall Trending Pie chart")
+![Italian constitutional Referendum 2016 Overall Trending Pie chart](https://github.com/ukaoskid/ita-ref-twitter-analisys/blob/master/images/national_pie.png "Italian constitutional Referendum 2016 Overall Trending Pie chart")
 
 > **Yes: `r pie_values$value[1]`%** 
 > **No: `r pie_values$value[2]`%** 
