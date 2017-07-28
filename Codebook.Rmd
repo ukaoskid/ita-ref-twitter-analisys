@@ -21,7 +21,7 @@ This study has to be intended for a experimental purpose
 
 - Taking tweets by geolocation filtering and hashtag filtering
     1. Negative opinion `#IoVotoNO, #BastaUnNO, #IoDicoNO, #VotaNO`
-    2. Positive opinion `#IoVotoSI, #BastaUnSI, #IoDicoSI, #VotaSI, #IoVotoSì, #BastaUnSì, #IoDicoSì, #VotaSì`
+    2. Positive opinion `#IoVotoSI, #BastaUnSI, #IoDicoSI, #VotaSI, #IoVotoSÃ¬, #BastaUnSÃ¬, #IoDicoSÃ¬, #VotaSÃ¬`
 - Geolocation granularity minimum level is Metropolitan City
 - Positive and negative meaning hastags cannot coexsists in the same tweet
 - User are grouped simulating one vote
@@ -190,7 +190,7 @@ Unfortunately for not-Italian people, the reform's original text is in Italian, 
 ##### Big Area
 ###### Histogram
 
-![Italian constitutional Referendum 2016 Big Area Trending Histogram](https://dl.dropboxusercontent.com/u/52092659/ref/final/big_area_hist.png "Italian constitutional Referendum 2016 Big Area Trending Histogram")
+![Italian constitutional Referendum 2016 Big Area Trending Histogram](https://github.com/ukaoskid/ita-ref-twitter-analisys/blob/master/images/big_area_hist.png "Italian constitutional Referendum 2016 Big Area Trending Histogram")
 
 ###### Final output
 ```{r, include=TRUE, results='asis', echo=FALSE}
