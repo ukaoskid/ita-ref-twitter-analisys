@@ -163,7 +163,7 @@ Brief description and explanation of the available datasets:
 
 #### Extraction and Data Process Flow
 
-![Extraction and Data Process Flow](https://dl.dropboxusercontent.com/u/52092659/ref/final/data_flow_diagram.png "Extraction and Data Process Flow")
+![Extraction and Data Process Flow](https://github.com/ukaoskid/ita-ref-twitter-analisys/blob/master/images/data_flow_diagram.png "Extraction and Data Process Flow")
 
 ### Poll results
 #### Preface
